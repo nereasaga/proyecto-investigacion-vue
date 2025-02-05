@@ -33,4 +33,7 @@
       width: 100%;
       padding-bottom: 2rem
     }
+    h2 {
+      padding-top: 2rem;
+    }
     </style>
