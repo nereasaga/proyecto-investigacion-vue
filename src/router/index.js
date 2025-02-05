@@ -21,7 +21,13 @@ const router = createRouter({
       path: '/ejemplos-directivas',
       name: 'Ejemplos Directivas',
       component: () => import('../views/EjemplosDirectivas.vue'),
+    },
+    {
+      path: '/ejemplocomputed',
+      name: 'Ejemplos Computed',
+      component: () => import('../views/EjemploComputed.vue'),
     }
+
   ],
 })
 
