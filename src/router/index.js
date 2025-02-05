@@ -26,8 +26,12 @@ const router = createRouter({
       path: '/ejemplocomputed',
       name: 'Ejemplos Computed',
       component: () => import('../views/EjemploComputed.vue'),
-    }
-
+    },
+    {
+      path: '/ejemplos-wacht-effect',
+      name: 'Ejemplos Wacht-Effect',
+      component: () => import('../views/EjemploWatchEffect.vue'),
+    },
   ],
 })
 
