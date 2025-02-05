@@ -1,12 +1,16 @@
+<script setup>
+import Directiva1 from '../components/Directiva1.vue'
+import Directiva2 from '../components/Directiva2.vue'
+import Directiva3 from '../components/Directiva3.vue'
+</script>
+
 <template>
-    <div class="prueba">
-      <div>{{ nickname }}</div>
-      <div v-text="nickname"></div> 
-    </div>
-  </template>
-  
-  <script setup>
-  import { ref } from 'vue'
-  
-  const nickname = ref('Nere')
-  </script>
+  <main>
+    <Directiva1 />
+    <Directiva2 />
+    <Directiva3 />
+
+  </main>
+</template>
+
+
