@@ -1,8 +1,9 @@
 <template>
     <h2>Directiva v-bind o : </h2>
     <div class="imagen">
-      <img :src="image" :alt="text">
+      <img class="logo" :src="image" :alt="text">
     </div>
+    <img class="ejemplo" :src="imagenVB" alt="vbind">
   </template>
   
   <script setup>
@@ -10,6 +11,7 @@
   
   const image = ref("src/assets/logo.svg")
   const text = ref("Logo")
+  const imagenVB = ref("src/assets/vbind.png")
   </script>
   <style scoped>
     .imagen {
@@ -18,8 +20,13 @@
         align-items: center;
         padding: 4rem;
     }
-    img {
+    .logo {
         width: 100px;
         height: 100px;
+    }
+
+    .ejemplo  {
+      width: 100%;
+      padding-bottom: 2rem
     }
     </style>

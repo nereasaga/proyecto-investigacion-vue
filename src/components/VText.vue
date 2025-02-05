@@ -5,12 +5,14 @@
       <div>{{ nickname }}</div>
       <div v-text="nickname"></div> 
     </div>
+    <img class="ejemplo" :src="imgVT" alt="vbind">
   </template>
   
   <script setup>
   import { ref } from 'vue'
   
   const nickname = ref('Nere')
+  const imgVT = ref('src/assets/vtext.png')
   </script>
   <style scoped>
     .prueba {
@@ -19,5 +21,9 @@
         justify-content: center;
         align-items: center;
         padding: 4rem;
+    }
+    .ejemplo  {
+
+      padding-bottom: 2rem
     }
     </style>
