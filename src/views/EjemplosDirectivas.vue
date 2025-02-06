@@ -1,13 +1,13 @@
 <script setup>
-import VBind from '../components/VBind.vue'
-import VShow from '../components/VShow.vue'
-import VText from '../components/VText.vue'
-import VIf from '../components/VIf.vue'
-import VIfElse from '../components/VIfElse.vue'
-import VFor from '../components/VFor.vue'
-import VModel from '../components/VModel.vue'
-import VHtml from '../components/VHtml.vue'
-import VCloak from '../components/VCloak.vue'
+import VBind from '../components/Directivas/VBind.vue'
+import VShow from '../components/Directivas/VShow.vue'
+import VText from '../components/Directivas/VText.vue'
+import VIf from '../components/Directivas/VIf.vue'
+import VIfElse from '../components/Directivas/VIfElse.vue'
+import VFor from '../components/Directivas/VFor.vue'
+import VModel from '../components/Directivas/VModel.vue'
+import VHtml from '../components/Directivas/VHtml.vue'
+import VCloak from '../components/Directivas/VCloak.vue'
 </script>
 
 <template>
