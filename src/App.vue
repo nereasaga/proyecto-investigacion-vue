@@ -14,6 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/ejemplos-directivas">Ejemplos Directivas</RouterLink>
         <RouterLink to="/ejemplocomputed">Ejemplos Computed</RouterLink>
+        <RouterLink to="/ejemplos-wacht-effect">Ejemplos Watch - Effect</RouterLink>
 
       </nav>
     </div>
