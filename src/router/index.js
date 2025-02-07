@@ -18,6 +18,16 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     {
+      path: '/ejemplo-CDN',
+      name: 'Ejemplo CDN',
+      component: () => import('../views/EjemploCDN.vue'),
+    },
+    {
+      path: '/ejemplo-CSS-global-local',
+      name: 'CSSComponent',
+      component: () => import('../views/EjemploCSS.vue'),
+    },
+    {
       path: '/ejemplos-directivas',
       name: 'Ejemplos Directivas',
       component: () => import('../views/EjemplosDirectivas.vue'),
@@ -31,6 +41,11 @@ const router = createRouter({
       path: '/ejemplos-wacht-effect',
       name: 'Ejemplos Wacht-Effect',
       component: () => import('../views/EjemploWatchEffect.vue'),
+    },
+    {
+      path: '/ejemplo-reactividad',
+      name: 'Ejemplo reactividad',
+      component: () => import('../views/EjemploReactividad.vue'),
     },
   ],
 })
