@@ -3,6 +3,7 @@
     <h1>CDN</h1>
     <p>Ejemplo de página con uso de CDN.</p>
     <button @click="abrirPaginaEstatica">Abrir Página Estática</button>
+      <button @click="goToHome"> Ir a Inicio</button>
   </div>
 </template>
 
@@ -15,6 +16,13 @@ export default {
       window.open('/Vue-to-do-list.html', '_blank');
     }
   }
+};
+import { useRouter } from 'vue-router';
+
+const router = useRouter(); 
+
+const goToHome = () => {
+  router.push('/'); 
 }
 </script>
 
