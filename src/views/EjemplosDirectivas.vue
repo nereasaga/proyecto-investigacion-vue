@@ -8,6 +8,7 @@ import VFor from '../components/Directivas/VFor.vue'
 import VModel from '../components/Directivas/VModel.vue'
 import VHtml from '../components/Directivas/VHtml.vue'
 import VCloak from '../components/Directivas/VCloak.vue'
+import Boton from '../components/BotonInicio.vue'
 </script>
 
 <template>
@@ -21,6 +22,8 @@ import VCloak from '../components/Directivas/VCloak.vue'
     <VIfElse />
     <VFor />
     <VCloak />
+    <Boton />
+
 
   </main>
 </template>

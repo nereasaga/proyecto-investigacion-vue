@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue';
 import imagenComp from '@/assets/imagen_computed.png'
+import BotonInicio from '@/components/BotonInicio.vue';
 
 const peso = ref(70);
 const altura = ref(1.75);
@@ -30,6 +31,7 @@ const estadoIMC = computed(() => {
     <p>Estado: {{ estadoIMC }}</p>
 
     <img :src="imagenComp" alt="imagen ejepmlo computed">
+    <div><BotonInicio /></div>
   </div>
 
   
