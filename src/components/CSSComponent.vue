@@ -31,7 +31,7 @@ h1 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #555;
   line-height: 1.5;
 }
