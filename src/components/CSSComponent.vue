@@ -26,22 +26,28 @@ export default {
 <style scoped>
 /* Estilos locales - solo afectan a este componente */
 h1 {
-  color: #5f6368; /* Color específico solo para el h1 dentro de este componente */
+  color:#041a62; /* Color específico solo para el h1 dentro de este componente */
+  font-size:2rem;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1.5rem;
   color: #555;
   line-height: 1.5;
 }
 
 button {
-  background-color: #ff6347; /* Estilo diferente para el botón en este componente */
-  font-size: 1rem;
+  background-color: #041a62; /* Estilo diferente para el botón en este componente */
+  font-size: 1.5rem;
+  padding:0.5rem;
+  color:white;
+  margin:1.5rem;
+  border-radius:10px;
 }
 
 button:hover {
-  background-color: #ff4500;
+  background-color: #5eb1d7;
+  color:#041a62;
 }
 span{
  color:red;
@@ -51,5 +57,6 @@ span{
 .miEstilo{
   color:green;
   font-size:3rem;
+  text-decoration:underline;
 }
 </style>
