@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue Todo List (CDN)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f6;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .app {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      max-width: 100%;
+    }
+    h1 {
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .task {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .task.completed {
+      text-decoration: line-through;
+      color: #999;
+    }
+    button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+<div id="app" class="app">
+  <h1>Vue Todo List</h1>
+  <input v-model="newTask" @keyup.enter="addTask" placeholder="Añade una tarea..." />
+  
+  <div v-for="(task, index) in tasks" :key="index" :class="['task', { completed: task.completed }]">
+    <span @click="toggleComplete(index)">{{ task.text }}</span>
+    <button @click="removeTask(index)">Borrar</button>
+  </div>
+
+  <p v-if="tasks.length === 0" style="text-align: center;">No hay tareas!</p>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+  const { createApp, ref } = Vue;
+
+  createApp({
+    setup() {
+      const newTask = ref('');
+      const tasks = ref([]);
+
+      // Función para agregar una tarea
+      const addTask = () => {
+        if (newTask.value.trim()) {
+          tasks.value.push({ text: newTask.value, completed: false });
+          newTask.value = ''; // Limpiar el campo de entrada
+        }
+      };
+
+      // Función para marcar una tarea como completada
+      const toggleComplete = (index) => {
+        tasks.value[index].completed = !tasks.value[index].completed;
+      };
+
+      // Función para eliminar una tarea
+      const removeTask = (index) => {
+        tasks.value.splice(index, 1);
+      };
+
+      return {
+        newTask,
+        tasks,
+        addTask,
+        toggleComplete,
+        removeTask
+      };
+    }
+  }).mount('#app');
+</script>
+
+</body>
+</html>
