@@ -18,6 +18,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/ejemplocomputed">Ejemplos Computed</RouterLink>
         <RouterLink to="/ejemplos-wacht-effect">Ejemplos Watch - Effect</RouterLink>
         <RouterLink to="/ejemplo-reactividad">Ejemplos Reactividad</RouterLink>
+        <RouterLink to="/ejemplo-props">Ejemplo Props</RouterLink>
+        <RouterLink to="/ejemplo-provideinject">Ejemplo Provide e Inject</RouterLink>
       </nav>
     </div>
   </header>

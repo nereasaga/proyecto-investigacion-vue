@@ -47,6 +47,16 @@ const router = createRouter({
       name: 'Ejemplo reactividad',
       component: () => import('../views/EjemploReactividad.vue'),
     },
+    {
+      path: '/ejemplo-props',
+      name: 'Ejemplo props',
+      component: () => import('../views/EjemplosProps.vue'),
+    },
+    {
+      path: '/ejemplo-provideinject',
+      name: 'Ejemplo Provide e Inject',
+      component: () => import('../views/EjemploProvide.vue'),
+    },
   ],
 })
 
