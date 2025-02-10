@@ -16,11 +16,13 @@ main {
 a,
 .green {
   text-decoration: none;
-  color: hsl(212, 55%, 30%);
+  color: #107acc;
   transition: 0.4s;
   padding: 3px;
 }
-
+body {
+  box-shadow: 10px 5px 5px rgba(167, 162, 162, 0.411);
+}
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
@@ -38,5 +40,20 @@ a,
     /* grid-template-columns: 1fr 1fr; */
     place-items: center;
     padding: 0 2rem;
+    background-color: #FFFFFF;
+    border-radius: 3rem;
+    box-shadow: 10px 5px 5px rgba(167, 162, 162, 0.411);
   }
+}
+button {
+  font-size: larger;
+  margin: 1rem;
+  background-color: #0cbccc;
+  /* height: 2rem; */
+  border-radius: 3rem;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border: 2px white;
 }
