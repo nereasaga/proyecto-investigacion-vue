@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="reactive">
     <h1>Componente Reactivo</h1>
     <p>Contador: {{ counter }}</p>
     <button @click="increment">Incrementar</button>
@@ -25,3 +25,9 @@ export default {
   }
 };
 </script>
+<style scoped>
+.reactive, button{
+  font-size:1.2rem;
+  padding:0.5rem;
+}
+</style>

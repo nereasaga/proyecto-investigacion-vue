@@ -10,14 +10,16 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <!-- <RouterLink to="/">Home</RouterLink> -->
+        <!-- <RouterLink to="/about">About</RouterLink> -->
         <RouterLink to="/ejemplo-CSS-global-local">Ejemplo CSS global y local</RouterLink>
         <RouterLink to="/ejemplo-CDN">Ejemplo CDN</RouterLink>
         <RouterLink to="/ejemplos-directivas">Ejemplos Directivas</RouterLink>
         <RouterLink to="/ejemplocomputed">Ejemplos Computed</RouterLink>
         <RouterLink to="/ejemplos-wacht-effect">Ejemplos Watch - Effect</RouterLink>
         <RouterLink to="/ejemplo-reactividad">Ejemplos Reactividad</RouterLink>
+        <RouterLink to="/ejemplo-props">Ejemplo Props</RouterLink>
+        <RouterLink to="/ejemplo-provideinject">Ejemplo Provide e Inject</RouterLink>
       </nav>
     </div>
   </header>
