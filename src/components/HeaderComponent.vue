@@ -23,7 +23,7 @@ const description = ref('Vue.js es un framework progresivo para construir interf
             <ul>
                 <li><router-link to="/ejemplo-CDN">Ejemplo CDN</router-link></li>          
                 <li><router-link to="/ejemplo-CSS-global-local">Ejemplo CSS </router-link></li>
-                <li><router-link to="/ejemplos-directivas">Ejemplo Directives</router-link></li>
+                <li><router-link to="/ejemplos-directivas">Ejemplo Directivas</router-link></li>
                 <li><router-link to="/ejemplocomputed">Ejemplo Computed</router-link></li>
                 <li><router-link to="/ejemplos-wacht-effect">Ejemplo Watch Effect</router-link></li>
                 <li><router-link to="/ejemplo-reactividad">Ejemplo Reactivity</router-link></li>
