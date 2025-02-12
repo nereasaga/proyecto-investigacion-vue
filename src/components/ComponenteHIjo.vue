@@ -1,13 +1,13 @@
 <template>
-    <div>
+  <div class="ejemplo">
+
       <h2>Componente Hijo</h2>
       <p>{{ mensaje }}</p> <!-- Aquí debería aparecer el mensaje -->
-    </div>
 
-    <div class="btn">
+
     <!-- Al hacer clic en el botón, se emite el evento 'saludar' -->
-    <button @click="$emit('saludar')">Saludar al padre</button>
-  </div>
+    <button class="btn" @click="$emit('saludar')">Darle el toque al padre</button>
+</div>
   </template>
   
   <script setup>
@@ -18,4 +18,16 @@
 
   defineEmits(["saludar"]); // Definir que el hijo puede emitir el evento
   </script>
+
+  <style scoped>
+  .ejemplo { 
+    padding: 3rem;
+    border: 2px solid rgb(144, 171, 245);
+    display: flex;
+  flex-direction: column;
+    /* width: 80%; */
+    justify-content: center;
+    align-items: center;
+    margin: 1rem}
+</style>
   
