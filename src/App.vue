@@ -22,6 +22,7 @@ import Footer from './components/FooterComponent.vue'
         <RouterLink to="/ejemplo-reactividad">Ejemplos Reactividad</RouterLink>
         <RouterLink to="/ejemplo-props">Ejemplo Props</RouterLink>
         <RouterLink to="/ejemplo-provideinject">Ejemplo Provide e Inject</RouterLink>
+        <RouterLink to="/fetch">Fetch</RouterLink>
       </nav>
         </div>  --> 
 

@@ -1,5 +1,5 @@
 <template>
-    <h2> Directiva v-show o @</h2>
+    <h2> Directivas v-show y v-on o @</h2>
     <div class="ejemplo">
       <button @click="mostrar = !mostrar">
         {{ mostrar ? "Ocultar" : "Mostrar" }} mensaje

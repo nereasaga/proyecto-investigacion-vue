@@ -57,6 +57,11 @@ const router = createRouter({
       name: 'Ejemplo Provide e Inject',
       component: () => import('../views/EjemploProvide.vue'),
     },
+    {
+      path: '/fetch',
+      name: 'Fetch',
+      component: () => import('../views/Fetch.vue'),
+    },
   ],
 })
 
