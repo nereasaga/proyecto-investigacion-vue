@@ -12,18 +12,18 @@
   <script setup>
     import { ref, onMounted } from 'vue';
     const results = ref([])
-    let imagen = ref([])
+
 
   const fetchPerson = async () => {
     const respuesta = await fetch ('https://randomuser.me/api/?results=16');
     const data = await respuesta.json();
     results.value = data.results;
-    imagen = results.user.picture.medium;
+
   }
 
 
-
-  onMounted(fetchPerson);
+  fetchPerson()
+  // onMounted(fetchPerson);
 
   </script>
 
