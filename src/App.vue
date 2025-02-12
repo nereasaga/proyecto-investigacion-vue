@@ -1,18 +1,19 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/HeaderComponent.vue'
+
+import Footer from './components/FooterComponent.vue'
 </script>
-
+     
 <template>
-  <header>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <Header ></Header>
+         <!--<div class="wrapper">-->
 
-      <nav>
+       <!-- <RouterLink to="/about">About</RouterLink> -->
+      <!-- <nav> -->
         <!-- <RouterLink to="/">Home</RouterLink> -->
-        <!-- <RouterLink to="/about">About</RouterLink> -->
-        <RouterLink to="/ejemplo-CSS-global-local">Ejemplo CSS global y local</RouterLink>
+  <!--   <RouterLink to="/ejemplo-CSS-global-local">Ejemplo CSS global y local</RouterLink>
         <RouterLink to="/ejemplo-CDN">Ejemplo CDN</RouterLink>
         <RouterLink to="/ejemplos-directivas">Ejemplos Directivas</RouterLink>
         <RouterLink to="/ejemplocomputed">Ejemplos Computed</RouterLink>
@@ -22,13 +23,20 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/ejemplo-provideinject">Ejemplo Provide e Inject</RouterLink>
         <RouterLink to="/fetch">Fetch</RouterLink>
       </nav>
-    </div>
-  </header>
+        </div>  --> 
+
 
   <RouterView />
+   <Footer>
+
+   </Footer>
+
 </template>
 
 <style scoped>
+p{
+  color:black;
+}
 header {
   line-height: 1.5;
   max-height: 100vh;
