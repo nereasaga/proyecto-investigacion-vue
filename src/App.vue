@@ -7,8 +7,7 @@ import Footer from './components/FooterComponent.vue'
      
 <template>
 
-      <Header >
-         </Header>
+      <Header ></Header>
          <!--<div class="wrapper">-->
 
        <!-- <RouterLink to="/about">About</RouterLink> -->
@@ -35,6 +34,9 @@ import Footer from './components/FooterComponent.vue'
 </template>
 
 <style scoped>
+p{
+  color:black;
+}
 header {
   line-height: 1.5;
   max-height: 100vh;
