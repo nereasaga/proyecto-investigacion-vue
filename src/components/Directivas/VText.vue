@@ -27,6 +27,10 @@
       padding-bottom: 2rem
     }
 
+    img {
+    width: 40%
+  }
+
     /* h2 {
       padding-top: 2rem;
     } */

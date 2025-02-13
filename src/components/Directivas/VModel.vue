@@ -35,4 +35,8 @@
     padding: 8px;
     font-size: 16px;
   }
+
+  img {
+    width: 70%
+  }
   </style>

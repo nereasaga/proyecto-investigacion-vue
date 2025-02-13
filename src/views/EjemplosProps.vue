@@ -1,11 +1,12 @@
 <script setup>
-import Watch from '../components/ComponentePadre.vue'
+import ComponentePadre from '../components/ComponentePadre.vue'
+import BotonInicio from '@/components/BotonInicio.vue';
 </script>
 
 <template>
   <main>
-    <Watch />
-    <Effect />
+    <ComponentePadre />
+
     <BotonInicio />
 
   </main>

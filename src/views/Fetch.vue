@@ -1,12 +1,12 @@
 <template>
-    <section>
+    <main>
     <div v-for="(user, index) in results" :key="index" class="card">
         <h3>{{ user.name.first }}</h3>
         <img :src="user.picture.medium" alt="user.picture.medium">
         <p>{{ user.location.city }}</p>
         <p>{{ user.dob.age }}</p>
     </div>
-</section>
+  </main>
   </template>
   
   <script setup>
@@ -28,14 +28,16 @@
   </script>
 
   <style scoped>
-    section {
+    main {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
     .card {
-      box-sizing: content-box;
-      padding: 3rem;
+
+      width: 20%;
+      padding: 1.5rem;
       text-wrap: balance;
 
 

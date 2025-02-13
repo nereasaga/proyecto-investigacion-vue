@@ -30,7 +30,7 @@
         padding: 4rem;
     }
     img  {
-      width: 100%;
+      width: 70%;
       padding-bottom: 2rem
     }
     h2 {

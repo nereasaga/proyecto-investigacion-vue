@@ -21,6 +21,7 @@ button {
   margin-top: 3rem;
   font-size: 16px;
   cursor: pointer;
-  width: 100%
+  width: 35%;
+  margin: 0 auto;
 }
 </style>
