@@ -8,6 +8,7 @@ import Footer from './components/FooterComponent.vue'
 <template>
 
       <Header ></Header>
+
          <!--<div class="wrapper">-->
 
        <!-- <RouterLink to="/about">About</RouterLink> -->
@@ -40,6 +41,14 @@ p{
 header {
   line-height: 1.5;
   max-height: 100vh;
+}
+
+main {
+  background-color: #FFFFFF;
+  width: 100%;
+    border-radius: 3rem;
+    box-shadow: 10px 5px 5px rgba(167, 162, 162, 0.411);
+    padding: 3rem
 }
 
 .logo {

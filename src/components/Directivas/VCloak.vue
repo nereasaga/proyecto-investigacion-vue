@@ -33,5 +33,6 @@
 
   img {
     padding-bottom: 10rem;
+    width: 50%
   }
   </style>

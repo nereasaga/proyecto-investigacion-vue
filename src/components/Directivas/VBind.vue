@@ -26,7 +26,7 @@
     }
 
     .ejemplo  {
-      width: 100%;
+      width: 50%;
       padding-bottom: 2rem
     }
     h2 {

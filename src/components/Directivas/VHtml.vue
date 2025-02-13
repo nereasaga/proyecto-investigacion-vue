@@ -26,4 +26,6 @@
 h2 {
 padding-top: 2rem;
 }
+
+img {width: 80%}
 </style>

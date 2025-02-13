@@ -30,4 +30,7 @@ const edad = ref(null)
   h2 {
     padding-top: 2rem;
   }
+  img {
+    width: 70%
+  }
   </style>
