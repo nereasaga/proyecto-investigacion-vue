@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2024 Vue Investigation. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Vue Investigation. Todos los derechos reservados.</p>
             <div class="social-links">
                 <a href="https://www.instagram.com" target="_blank" class="icon"><i class="uil uil-instagram"></i></a>
                 <a href="https://www.twitter.com" target="_blank" class="icon"><i class="uil uil-twitter"></i></a>
@@ -14,14 +14,16 @@
 
 
 <style scoped>
+
    .footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 15px 10px;
-    margin-top: 20px;
-    border-radius: 10px;
+    margin-top: 50px;
+    border-radius: 30px;
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .footer-content {
